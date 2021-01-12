@@ -1,0 +1,3 @@
+If it takes a long time to load pages, you need to disable loading of external fonts. To do this, add the following lines to wp-config.php:
+define('WP_HTTP_BLOCK_EXTERNAL', true);
+define('WP_AUTO_UPDATE_CORE', false);

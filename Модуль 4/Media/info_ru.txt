@@ -1,0 +1,3 @@
+Если долго грузит страницы, нужно отключить подгрузку внешних шрифтов. Для этого добавьте строчки в wp-config.php:
+define('WP_HTTP_BLOCK_EXTERNAL', true);
+define('WP_AUTO_UPDATE_CORE', false);

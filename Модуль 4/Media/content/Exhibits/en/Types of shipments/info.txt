@@ -1,0 +1,5 @@
+Short name: Types of shipments
+Name: Types of shipments
+Year: 1980
+Description: A registered letter, a valuable letter, a postcard with a paid answer, a coupon for a parcel with a declared value, a coupon for transfer by mail.
+Links:

@@ -1,0 +1,6 @@
+Short name: KIM-2-SP
+Name: Cash register KIM-2-SP
+Year: 1973
+Description: Cash register machine KIM-2-SP, 1973. Ryazan plant of calculating and analytical machines. Designed for mechanization of cash transactions, accounting of cash receipts, registration of the purchase of goods and printing a cash register receipt
+Links:
+https://habr.com/ru/post/376385/

@@ -1,0 +1,6 @@
+Short name: "Electronics"
+Name: Stationary programmable calculator "Electronics"
+Year: 1972
+Description: Stationary programmable calculator "Electronics". 1972 JSC NPP Zavod Iskra, Ulyanovsk.
+Links:
+http://myadel-gimnaz.by/node/137

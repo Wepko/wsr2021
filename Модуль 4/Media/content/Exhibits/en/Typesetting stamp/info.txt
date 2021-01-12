@@ -1,0 +1,5 @@
+Short name: Typesetting stamp
+Name: Typesetting stamp with serial number and current date
+Year: 1987
+Description: Typesetting metal stamp with a serial number and current date. 1987 Hand stamp immersed in ink pad. To change the date or number, you need to turn the wheel before placing the print.
+Links:

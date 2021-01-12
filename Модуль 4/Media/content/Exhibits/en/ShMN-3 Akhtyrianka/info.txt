@@ -1,0 +1,5 @@
+Short name: ShMN-3 "Akhtyrianka"
+Name: Electric stamping machine SHMN-3 "Akhtyrianka"
+Year: 1981
+Description: "Electric stamping machine ШМН-3" Akhtyrianka ". Akhtyrka State Union Plant" Promsvyaz ". 1981 Special device with an electric drive for mass stamping of mail"
+Links:
