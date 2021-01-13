@@ -1,0 +1,118 @@
+/* -------base css ---------- */
+*, 
+*::before, 
+*::after {
+  box-sizing: border-box;
+}
+
+ul, ol {
+  padding: 0;
+  list-style: none;
+}
+
+body, h1, h2, h3, h4, p, ul, li {
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration-skip-ink: auto;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+article > * + * {
+  margin-top: 1em;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+/* -------base css end ---------- */
+
+
+/* --------main css ---------- */
+
+body {
+  background-color: #fff;
+}
+
+.container {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.header {
+  background-color: #fff;
+}
+
+.header__menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: rgb(194, 194, 255);
+}
+
+.logo {
+  display: flex;
+}
+
+.logo__images {
+  width: 150px;
+}
+
+.logo__name {
+  display: block;
+  align-self: center;
+  padding-left: 20px; 
+}
+
+.nav ul {
+  display: flex;
+}
+
+.nav ul li a {
+  display: block;
+  color: black;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  transition: cubic-bezier(0.215, 0.610, 0.355, 1) all 0.5s
+}
+
+.nav ul li a:hover {
+  background-color: #aac4c4;
+  color: #fff;
+}
+
+
+/* --------main css end---------- */
+
+
+/* --------section-one css ---------- */
+
+
+
+/* --------section-one css end---------- */
