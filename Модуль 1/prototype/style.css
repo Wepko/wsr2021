@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 ul, ol {
   padding: 0;
   list-style: none;
@@ -12,6 +16,7 @@ ul, ol {
 
 body, h1, h2, h3, h4, p, ul, li {
   margin: 0;
+  font-size: 1.8rem;
 }
 
 body {
@@ -22,7 +27,7 @@ body {
 }
 
 a {
-  text-decoration-skip-ink: auto;
+  text-decoration: none;
 }
 
 img {
@@ -49,6 +54,11 @@ select {
     scroll-behavior: auto !important;
   }
 }
+
+@font-face {
+  font-family: CustomRoboto; /* Имя шрифта */
+  src: url(fonts/Roboto-Regular.ttf); /* Путь к файлу со шрифтом */
+}
 /* -------base css end ---------- */
 
 
@@ -56,38 +66,116 @@ select {
 
 body {
   background-color: #fff;
+  font-family: CustomRoboto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
-
+/* elements */
 .container {
   max-width: 1280px;
   width: 100%;
   margin: 0 auto;
-  padding: 0 1rem;
+  padding: 0 1.5rem;
 }
+
+
+.input {
+  box-shadow: inset 0 0.0625em 0.125em rgba(10,10,10,.05);
+  max-width: 100%;
+  width: 100%;
+  border-radius: 4px;
+  padding: 0.5rem 0.8rem;
+  border: 1px solid #dbdbdb;
+  background-color: #fff;
+  color: #363636;
+}
+
+.input:hover {
+  border-color: #b5b5b5;
+}
+
+.input:active, .input:focus {
+  border-color: #3273dc;
+  box-shadow: 0 0 0 0.125em rgba(50,115,220,.25);
+  outline: none;
+}
+
+.input::-moz-placeholder, .textarea::-moz-placeholder, .select select::-moz-placeholder {
+  color: rgba(54, 54, 54, 0.3);
+}
+
+.field:not(:last-child) {
+  margin-bottom: .75rem;
+}
+
+.btn {
+  display: inline-block;
+  background: #315f9d;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.4rem;
+  transition: 0.5s;
+}
+.btn:hover {
+  background: #4977b5;
+  box-shadow:  0 0 0.4rem #000;
+}
+
+.table {
+  width: 100%;
+  border: 0.1rem #000 solid;
+  border-collapse: collapse;
+}
+
+.table tr > th {
+  padding: 1rem;
+  color: #fff;
+  background-color: #315f9d;
+}
+
+.table tr > td {
+  padding: 1rem;
+}
+
+.table th, td {
+  border: 0.1rem #000 solid;
+}
+
+
+/* elements */
 
 .header {
   background-color: #fff;
+  box-shadow: 0 0.1rem 0.5rem #0000002e
+}
+
+.screen-m {
+  background-color: #f2f2f299;
 }
 
 .header__menu {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  background-color: rgb(194, 194, 255);
 }
 
 .logo {
   display: flex;
+  color: inherit;
 }
 
 .logo__images {
-  width: 150px;
+  width: 15rem;
+  padding: 0.9rem;
 }
 
 .logo__name {
   display: block;
   align-self: center;
-  padding-left: 20px; 
+  padding-left: 2rem; 
 }
 
 .nav ul {
@@ -98,12 +186,12 @@ body {
   display: block;
   color: black;
   text-decoration: none;
-  padding: 0.5rem 1rem;
+  padding: 1.5rem 2rem;
   transition: cubic-bezier(0.215, 0.610, 0.355, 1) all 0.5s
 }
 
 .nav ul li a:hover {
-  background-color: #aac4c4;
+  background-color: #315f9d;
   color: #fff;
 }
 
@@ -113,6 +201,190 @@ body {
 
 /* --------section-one css ---------- */
 
+.section-one {
+  background: url("img/customn/avia-header.jpg") no-repeat;
+  background-size: cover;
+  background-position-y: 70%;
+  padding: 5rem 0;
+  min-height: 100vh;
+}
 
+
+.promo__title {
+  color: #fff;
+  font-size: 3.2rem;
+}
+
+.infographics {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  padding: 4rem;
+}
+
+.step {
+  font-size: 2.3rem;
+  width: 7rem;
+  height: 7rem;
+  background-color: #fff;
+  margin: 1rem;
+  border-radius: 50%;
+  position: relative;
+}
+
+.step__content, .step__description {
+  position: absolute;
+
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.step__content {
+  top: 50%;
+}
+
+.step__description {
+  top: 140%;
+  width: 20rem;
+  text-align: center;
+  color: #fff;
+}
+
+.form-gorizontal {
+  display: flex;
+  justify-content: space-around;
+}
+
+.form-vertical {
+  display: flex;
+  flex-direction: column;
+  width: 35rem;
+}
+
+.itog {
+  margin: 3rem;
+  font-size: 3.2rem;
+  color: #fff;
+}
+
+.itog-cost { 
+  font-size: 5rem;
+}
 
 /* --------section-one css end---------- */
+
+
+/* --------section-two css ---------- */
+
+.section-two {
+  padding: 5rem 0;
+}
+
+.section-two__title h2{
+  text-align: center;
+  font-size: 2.4rem;
+  margin: 2rem 0;
+}
+.section-two__body {
+  padding: 1.5rem 0;
+}
+
+.about-company, .form-search {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.about-company__images {
+  flex: 1 0 50%;
+  min-width: 25rem;
+}
+
+.about-company__body {
+  align-self: center;
+  flex: 1 0 45%;
+  margin-left: 1rem;
+}
+
+.about-company__body p {
+  margin: 1rem 0;
+}
+
+.form-search__body {
+  align-self: center;
+  margin-right: 20rem;
+}
+
+.stock {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
+.stock__element {
+  position: relative;
+  flex: 1 0 45%;
+  margin: 1rem 0;
+  cursor: pointer;
+  border: 1px solid #fff;
+
+}
+
+.stock__element::before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 1rem;
+  display: block;
+  width: calc(100% - 2rem);
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  transition: opacity .5s;
+}
+
+.stock__element:hover::before, 
+.stock__element:hover .stock__description-block {
+  opacity: 1;
+}
+
+.stock__images {
+  object-fit: cover;
+  width: 38rem;
+  height: 28rem;
+  margin: 0 auto;
+  display: block;
+}
+
+.stock__title {
+  padding: 1rem 0; 
+}
+
+.stock__description {
+  padding: 2rem 0; 
+}
+.stock__description-block {
+  opacity: 0;
+  color: #fff;
+  max-width: calc(100% - 5rem);
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  transition: opacity .5s;
+
+}
+  
+/* --------section-two css end---------- */
+
+.footer {
+  color: #fff;
+  background-color: #315f9d;
+  min-height: 20vh;
+  padding: 2.5rem;
+  margin-top: auto;
+}  
+
+.footer p {
+  text-align: center;
+}
