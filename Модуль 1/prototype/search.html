@@ -83,10 +83,34 @@
           </tr>
         </table>
         <div class="select-rese">
-          <h2 class="select-rese__title">Выбора понравившихся рейсов </h2>
-          <div class="select-rese__body">
-            <button class="btn">Забронировать рейсы</button>
-          </div>
+          <h2 class="select-rese__title">Выбор понравившихся рейсов </h2>
+          <form action="#" method="POST" class="select-rese__body">
+            <div class="select-rese__block">
+                <div>
+                  <span>Выбор рейса в Туда:</span><br>
+                  <select>
+                    <option value="default">Нет</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                  </select>
+              </div>
+            </div>
+            <div class="select-rese__block">
+              <div>
+                <span>Выбор рейса От туда:</span><br>
+                <select>
+                  <option value="default">Нет</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                </select>
+              </div>
+            </div>
+            <div class="select-rese__buttons">
+              <a href="booking.html" class="btn">Бронировать рейс</a>
+            </div>
+          </form>
         </div>
       </div>
     </div>
