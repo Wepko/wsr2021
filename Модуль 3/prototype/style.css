@@ -95,10 +95,6 @@ body {
   flex-direction: column;
   width: 35rem;
 }
-
-.box-shadow-white {
-  box-shadow: 0 0 1rem #fff !important;
-}
 /* elements modify*/
 
 
@@ -113,7 +109,7 @@ body {
 
 
 
-.input, .select select{
+.input {
   box-shadow: inset 0 0.0625em 0.125em rgba(10,10,10,.05);
   max-width: 100%;
   width: 100%;
@@ -142,48 +138,6 @@ body {
   margin-bottom: .75rem;
 }
 
-
-.select {
-  display: inline-block;
-  max-width: 100%;
-  position: relative;
-  vertical-align: top;
-}
-
-.select select {
-  cursor: pointer;
-  display: block;
-  font-size: 1em;
-  max-width: 100%;
-  outline: 0;
-
-  background-color: #fff;
-  border-color: #dbdbdb;
-  border-radius: 4px;
-  color: #363636;
-}
-
-.select::before {
-  content: " ";
-  border-color: #3273dc;
-  right: 1.125em;
-  z-index: 4;
-
-  border: 3px solid transparent;
-  border-radius: 2px;
-  border-right: 0;
-  border-top: 0;
-  content: " ";
-  display: block;
-  height: .625em;
-  margin-top: -.4375em;
-  pointer-events: none;
-  position: absolute;
-  top: 50%;
-  transform: rotate(-45deg);
-  transform-origin: center;
-  width: .625em;
-}
 
 
 .btn {
@@ -224,12 +178,11 @@ body {
 
 /* ------------- component card ---------------- */
 .card {
+  max-width: 30rem;
   border-radius: 0.5rem;
   box-shadow: 0 0 1rem rgba(10,10,10,.3);
-  position: relative;
-  background-color: #fff;
 }
-.card__title {
+.card__title, .card__body {
   padding: 1rem 2rem;
 }
 .card__title {
@@ -237,20 +190,8 @@ body {
   color: #fff;
 }
 .card__body {
-  padding: 1.5rem 2rem;
-}
-.card__title--close::before {
-  content: "";
-  cursor: pointer;
-  display: inline-block;
-  width: 1.5rem;
-  height: 1.5rem;
-  position: absolute;
-  top: 1.5rem;
-  left: 90%;
-  background-color: #fff;
-}
 
+}
 /* ------------- component card end ---------------- */
 
 /* ------------- component popup ---------------- */
@@ -540,56 +481,45 @@ body {
 /* --------------- search end ----------------- */
 
 
-/* --------------- booking html ----------------*/
 
-.booking {
-  margin: 4rem 0;
+
+.btn-close {
+  transform: translate(20px, -3px);
 }
 
-.booking__person  {
+.btn-close span{
+  width: 2rem;
+  height: 2rem;
+  transform: rotate(45deg) scale(1);
+  transform-origin: center;
+  font-size: 3rem;
+  display: inline-block;
+  cursor: pointer;
+  transition: transform .3s;
+}
+
+.btn-close span:hover {
+  transform: scale(1.1) rotate(45deg) ;
+}
+
+.btn-add {
+  width: 2rem;
+  height: 2rem;
+  transform: scale(1);
+  transform-origin: center;
+  font-size: 3rem;
+  display: inline-block;
+  cursor: pointer;
+  transition: transform .3s;
+}
+
+.btn-add span:hover {
+  transform: scale(1.1) ;
+}
+
+.booking__title {
   display: flex;
-  flex-wrap: wrap;
 }
-
-.booking__person .card:not(:first-child) {
-  margin: 0 2rem;
-}
-
-.booking__person .card {
-  max-width: 30rem;
-}
-
-.booking__person-btn {
-  display: flex;
-  align-items: center;
-}
-
-.booking__itog {
-
-}
-
-.booking__button {
-
-}
-
-/* --------------- booking html ----------------*/
-
-
-
-
-/* --------------- register html ----------------*/
-
-.register {
-  max-width: 35rem;
-  margin: 0 auto;
-}
-
-.register .card {
-  margin: 0 auto;
-}
-
-/* --------------- register end ----------------*/
-
 
 
 
