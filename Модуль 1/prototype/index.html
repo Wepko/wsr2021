@@ -16,8 +16,8 @@
         </a>
         <nav class="nav">
           <ul>
-            <li class="test-0-nav-1"><a href="">Акции </a></li>
-            <li class="test-0-nav-2"><a href="">Поиск </a></li>
+            <li class="test-0-nav-1"><a href="#stock">Акции </a></li>
+            <li class="test-0-nav-2"><a href="#search">Поиск </a></li>
             <li class="test-0-nav-3"><a href="register.html">Регистрация на рейс</a></li>
             <li class="test-0-nav-4"><a href="">Личный кабинет</a></li>
           </ul>
@@ -25,30 +25,28 @@
       </div>
     </div>
   </header>
-  <section class="section-one">
+  <section class="section-one screen-top">
     <div class="container">
       <div class="section-one__body">
         <div class="promo">
           <h1 class="promo__title">Бронируй и осуществляй перелеты <br> по сниженым  ценам</h1>
           <div class="promo__body">
-            <div class="promo__infographics">
+            <form class="promo__infographics">
                 <div class="step">
-                  <div class="step__content">1</div>
-                  <div class="step__description">step - 1</div>
+                  <div class="step__point" data-step="promo_1"><span class="step__content">1</span></div>
+                  <div class="step__description">Выбирете дату рейса</div>
+                  <div class="field" data-field="promo_1"><input type="date" class="input"></div>
                 </div>
                 <div class="step">
-                  <div class="step__content">2</div>
-                  <div class="step__description">step - 2</div>
+                  <div class="step__point" data-step="promo_2"><span class="step__content">2</span></div>
+                  <div class="step__description">Введите число бронирование</div>
+                  <div class="field" data-field="promo_2"><input type="date" class="input"></div>
                 </div>
                 <div class="step">
-                  <div class="step__content">3</div>
-                  <div class="step__description">step - 3</div>
+                  <div class="step__point" data-step="promo_3"><span class="step__content">3</span></div>
+                  <div class="step__description">Вероятность вылета</div>
+                  <div class="field" data-field="promo_3"><input type="text" readonly class="input"></div>
                 </div>
-            </div>
-            <form action="#" method="POST" class="form-gorizontal">
-              <div class="field"><input type="text" class="input"></div>
-              <div class="field"><input type="text" class="input"></div>
-              <div class="field"><input type="text" class="input"></div>
             </form>
             <p class="promo__itog">Примерная стоимость билета:<br><span class="promo__itog-cost">32 000 </span></p>
           </div>
@@ -63,10 +61,11 @@
       <div class="section-two__body">
         <div class="about-company">
           <div class="about-company__body"> 
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta fugit voluptas, quas deleniti alias delectus fuga cumque sequi, 
-            neque veritatis asperiores. Distinctio, quae saepe accusamus aperiam earum eius eos dicta? </p>
-            <p>Officia deserunt laudantium ut suscipit! 
-              Quisquam mollitia totam exercitationem neque cumque placeat dolores sapiente odio sunt quis, officiis doloribus? Quasi.</p>
+            <p>Наша компания FightPool обеспечивает возврат и обмен билетов даже вовремя подемии. Так же у нас происходит постояное географический рост полетов по России, чтобы вы могли
+              чаще видитесь с близкими. Выбирайте нашу компанию, чтобы лететь туда, где вас всегда ждут.
+            </p>
+            <p>С 10 августа возобновились акции полетов в Турцию. Акции из Москвы в Анталию будут выполняться дважды.
+              в день ежедневно, а акции по маршруту Москва-Даламан будут выполняться от трех до семи раз в неделю со скидком в 25%</p>
           </div>
           <div class="about-company__images">
             <img src="img/airline-staff-never-fat-British-Airways-711420.jpg" alt="Кратинкак о нас">
@@ -76,7 +75,7 @@
     </div>
   </section>
 
-  <section class="section-two screen-m">
+  <section id="search" class="section-two screen-m">
     <div class="container">
       <div class="section-two__title"><h2>Форма поиска</h2></div>
       <div class="section-two__body">        
@@ -86,12 +85,12 @@
           </div>
           <div class="form-search__body"> 
             <form action="#" method="POST" class="form-vertical">
-              <div class="field"><label for="name1">Откуда</label><br><input type="text" id="name1" placeholder="Откуда" class="input"></div>
-              <div class="field"><label for="name2">Куда</label><br><input type="text" id="name2" placeholder="Куда" class="input"></div>
-              <div class="field"><label for="name3">Туда</label><br><input type="text" id="name3" placeholder="Туда" class="input"></div>
-              <div class="field"><label for="name4">Обратно</label><br><input type="text" id="name4" placeholder="Обратно" class="input"></div>
-              <div class="field"><label for="name5">Количество пассажиров </label><br><input type="text" placeholder="Количество"  id="name5" class="input"></div>
-              <div class="field"><a href="search.html" class="btn">Найти рейс </a></div>
+              <div class="field"><label for="name1">Город или аэропорт отправления </label><br><input type="text" id="name1" placeholder="Откуда" class="input"></div>
+              <div class="field"><label for="name2">Город или аэропорт назначения</label><br><input type="text" id="name2" placeholder="Куда" class="input"></div>
+              <div class="field"><label for="name3">Дата вылета</label><br><input type="date" id="name3" placeholder="Туда" class="input"></div>
+              <div class="field"><label for="name4">Обратная дата вылета</label><br><input type="date" id="name4" placeholder="Обратно" class="input"></div>
+              <div class="field"><label for="name5">Количество пассажиров </label><br><input type="number" placeholder="Количество"  id="name5" class="input"></div>
+              <div class="field"><a href="search.html" class="btn">Поиск билета</a></div>
               
             </form>
           </div>
@@ -100,33 +99,33 @@
     </div>
   </section>
 
-  <section class="section-two">
+  <section id="stock" class="section-two">
     <div class="container">
       <div class="section-two__title"><h2>Наши акции</h2></div>
       <div class="section-two__body">        
         <div class="stock">
-          <div class="stock__element">
+          <div class="stock__element" data-modal="modal_1">
             <img src="img/promotions/promotion1.jpg" alt="Картинка" class="stock__images">
             <div class="stock__description-block">
               <h3 class="stock__title">Возврат и обмен билетов</h3>
               <p class="stock__description">Пандемия изменила планы многих путешественников, но мы знаем, что она не продлится вечно.</p>
             </div>
           </div>
-          <div class="stock__element">
+          <div class="stock__element" data-modal="modal_2">
             <img src="img/promotions/promotion2.jpg" alt="Картинка" class="stock__images">
             <div class="stock__description-block">
               <h3 class="stock__title">Лучшие предложения</h3>
               <p class="stock__description">Чтобы снова увидеть улицы, которые так много видели. Обнять своих любимых и оглянуться назад,</p>
             </div>
           </div>
-          <div class="stock__element">
+          <div class="stock__element" data-modal="modal_3">
             <img src="img/promotions/promotion3.jpg" alt="Картинка" class="stock__images">
             <div class="stock__description-block">
               <h3 class="stock__title">Увидимся чаще</h3>
               <p class="stock__description">С начала января мы расширяем географию полетов по России, чтобы вы могли</p>
             </div>
           </div>
-          <div class="stock__element">
+          <div class="stock__element" data-modal="modal_4">
             <img src="img/promotions/promotion4.jpg" alt="Картинка" class="stock__images">
             <div class="stock__description-block">
               <h3 class="stock__title">Все снова включено</h3>
@@ -143,28 +142,89 @@
       <div class="section-two__title"><h2>Закрытые акции</h2></div>
       <div class="section-two__body">        
         <div class="close-stock">
-          <form action="#" method="POST" class="form-gorizontal">
-            <div class="field"><input type="text" class="input"></div>
-            <div class="field"><input type="text" class="input"></div>
-            <div class="field"><input type="text" class="input"></div>
-            <button class="btn">Отправить</button>
+          <form action="#" method="POST" class="form-center">
+            <div class="field">
+              <span>Введите Email</span>
+              <div class="control">
+                <input type="text" class="input" placeholder="email">
+                <button class="btn">Подписаться</button>
+              </div>
+            </div>
+            
           </form>
         </div>
       </div>
     </div>
   </section>
 
-  <div class="popup">
-    <h1>hsdlkjalk</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-      Eos accusamus alias natus obcaecati voluptates saepe 
-      inventore, autem culpa minima at modi error quam soluta 
-      distinctio!
-    </p>
+  <div id="modal_1" class="modal-container">
+    <div class="modal">
+      <div class="modal-head">
+        <h3>Акция: Возврат и обмен билетов</h3>
+        <button data-btn="modal-close" class="btn">&times;</button>
+      </div>
+      <div class="modal-content">
+        <img src="img/promotions/promotion1.jpg" alt="Картинка" class="stock__images">
+        <p>Пандемия изменила планы многих путешественников, 
+          но мы знаем, что она не продлится вечно.</p>
+      </div>
+    </div>
   </div>
-  <button class="open-popup">button 1</button>
-  <button class="close-popup">button 1</button>
-  <footer class="footer"><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit exercitationem nobis fugiat eveniet ipsam, eos provident perferendis tenetur rerum cupiditate vel id mollitia cumque, consequuntur dolor totam expedita commodi. Enim alias deleniti blanditiis facilis exercitationem? Omnis assumenda architecto repudiandae minima ullam facilis, facere aliquid suscipit.</p></footer>
+  
+  <div id="modal_2" class="modal-container">
+    <div class="modal">
+      <div class="modal-head">
+        <h3>Акция: Возврат и обмен билетов</h3>
+        <button data-btn="modal-close" class="btn">&times;</button>
+      </div>
+      <div class="modal-content">
+        <img src="img/promotions/promotion2.jpg" alt="Картинка" class="stock__images">
+        <p>Пандемия изменила планы многих путешественников, 
+          но мы знаем, что она не продлится вечно.</p>
+      </div>
+    </div>
+  </div>
+  
+  <div id="modal_3" class="modal-container">
+    <div class="modal">
+      <div class="modal-head">
+        <h3>Акция: Возврат и обмен билетов</h3>
+        <button data-btn="modal-close" class="btn">&times;</button>
+      </div>
+      <div class="modal-content">
+        <img src="img/promotions/promotion3.jpg" alt="Картинка" class="stock__images">
+        <p>Пандемия изменила планы многих путешественников, 
+          но мы знаем, что она не продлится вечно.</p>
+      </div>
+    </div>
+  </div>
+  
+  <div id="modal_4" class="modal-container">
+    <div class="modal">
+      <div class="modal-head">
+        <h3>Акция: Возврат и обмен билетов</h3>
+        <button data-btn="modal-close" class="btn">&times;</button>
+      </div>
+      <div class="modal-content">
+        <img src="img/promotions/promotion4.jpg" alt="Картинка" class="stock__images">
+        <p>Пандемия изменила планы многих путешественников, 
+          но мы знаем, что она не продлится вечно.</p>
+      </div>
+    </div>
+  </div>
+  
+
+  <footer class="footer">
+    <nav class="nav">
+      <ul>
+        <li class="test-0-nav-1"><a href="#stock">Акции </a></li>
+        <li class="test-0-nav-2"><a href="#search">Поиск </a></li>
+        <li class="test-0-nav-3"><a href="register.html">Регистрация на рейс</a></li>
+        <li class="test-0-nav-4"><a href="">Личный кабинет</a></li>
+      </ul>
+    </nav>
+    <p class="footer_phone">Телефон “8 (800) 100-10-10” </p>
+  </footer>
   <script src="js/jquery-3.5.1.min.js"></script>
   <script src="js/script.js"></script>
 </body>
